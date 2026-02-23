@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "4.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ceasar-cypher",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ceasar-cypher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ceasar-cypher-Debug-60835349ac2ca2817f4e.json",
+					"name" : "ceasar-cypher",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dorza/Documents/Repositories/Personal/cpp-learning-journey/01-fundamentals/memory-experiments/ceasar-cypher/cmake-build-debug",
+		"source" : "C:/Users/Dorza/Documents/Repositories/Personal/cpp-learning-journey/01-fundamentals/memory-experiments/ceasar-cypher"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

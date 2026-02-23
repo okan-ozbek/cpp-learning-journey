@@ -114,7 +114,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/ceasar_cypher.h",
+			"path" : "include/ceasar_cypher.h",
 			"sourceGroupIndex" : 1
 		}
 	],

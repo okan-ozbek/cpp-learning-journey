@@ -1,4 +1,4 @@
 "E:\Program Files\CLion 2025.2.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=E:/Program Files/CLion 2025.2.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\Dorza\Documents\Repositories\Personal\cpp-learning-journey\01-fundamentals\memory-experiments\ceasar-cypher -B C:\Users\Dorza\Documents\Repositories\Personal\cpp-learning-journey\01-fundamentals\memory-experiments\ceasar-cypher\cmake-build-debug
--- Configuring done (1.5s)
+-- Configuring done (0.3s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/Dorza/Documents/Repositories/Personal/cpp-learning-journey/01-fundamentals/memory-experiments/ceasar-cypher/cmake-build-debug

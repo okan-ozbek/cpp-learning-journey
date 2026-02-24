@@ -1,8 +1,6 @@
 # ninja log v6
-3	416	7935930705578080	build.ninja	dc1bf3d23699d3be
-3	416	7935930705530507	C:/Users/Dorza/Documents/Repositories/Personal/cpp-learning-journey/01-fundamentals/memory-experiments/ceasar-cypher/cmake-build-debug/cmake_install.cmake	dc1bf3d23699d3be
+2	351	7936599258828211	build.ninja	dc1bf3d23699d3be
+2	351	7936599258763535	C:/Users/Dorza/Documents/Repositories/Personal/cpp-learning-journey/01-fundamentals/memory-experiments/ceasar-cypher/cmake-build-debug/cmake_install.cmake	dc1bf3d23699d3be
 5	545	7935930576864894	CMakeFiles/ceasar-cypher.dir/src/main.cpp.obj	d92d0a135df7657c
 545	664	7935930582272904	ceasar-cypher.exe	c7cc4bbd096e367b
 5	610	7935928357002322	CMakeFiles/ceasar-cypher.dir/src/ceasar_cypher.cpp.obj	ce7b4bb05d38d90e
-2	351	7935930705578080	build.ninja	dc1bf3d23699d3be
-2	351	7935930705578080	C:/Users/Dorza/Documents/Repositories/Personal/cpp-learning-journey/01-fundamentals/memory-experiments/ceasar-cypher/cmake-build-debug/cmake_install.cmake	dc1bf3d23699d3be

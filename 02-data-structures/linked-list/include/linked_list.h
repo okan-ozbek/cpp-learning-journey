@@ -12,15 +12,20 @@
 class linked_list {
 public:
     linked_list() = default;
+    ~linked_list();
 
-    void push_front(node* node);
-    void push_back(node* node);
-    void insert_after(node* prev, node* node);
-    void remove(node* node);
+    void pushFront(int value);
+    void pushBack(int value);
+    void insertBefore(int value, node* before);
+    void insertAfter(int value, node* after);
+    void remove(const node* node);
     void print() const;
 
+    [[nodiscard]] node* findByIndex(std::size_t index) const;
     [[nodiscard]] node* findByValue(int value) const;
-    [[nodiscard]] bool is_empty() const;
+    [[nodiscard]] node* getHead() const;
+    [[nodiscard]] node* getTail() const;
+    [[nodiscard]] bool isEmpty() const;
     [[nodiscard]] std::size_t size() const;
 
 private:

@@ -6,39 +6,38 @@
 
 #include "../include/linked_list.h"
 
+#pragma region SIMPLE_ALLOCATION_CHECKER
+static int alloc_count = 0;
+
+void* operator new(std::size_t size) {
+    alloc_count++;
+    return std::malloc(size);
+}
+
+void operator delete(void* ptr) noexcept {
+    alloc_count--;
+    std::free(ptr);
+}
+
+void operator delete(void* ptr, std::size_t size) noexcept {
+    alloc_count--;
+    std::free(ptr);
+}
+#pragma endregion
+
 int main() {
-    linked_list list{};
+    {
+        std::cout << "Alloc count 1: " << alloc_count << std::endl;
+        linked_list list{};
 
-    node n1 {1};
-    node n2 {2};
-    node n3 {3};
-    node n4 {4};
-
-    // List is empty!
-    list.print();
-
-    // 1 -> 2 -> 3
-    list.push_back(&n1);
-    list.push_back(&n2);
-    list.push_back(&n3);
-    list.print();
-
-    // 1 -> 3
-    list.remove(&n2);
-    list.print();
-
-    // 1 -> 4 -> 3
-    list.insert_after(&n1, &n4);
-    list.print();
-
-    // 4
-    const node* value1 {list.findByValue(4)};
-    std::cout << value1->getValue() << std::endl;
-
-    // TODO: Why doesn't this work properly?
-    if (const node* value2 {list.findByValue(7)}; value2 == nullptr) {
-        std::cout << "Value not found!" << std::endl;
+        list.pushBack(1);
+        list.pushBack(2);
+        list.pushBack(3);
+        list.remove(list.findByIndex(0));
+        list.print();
+        std::cout << "\nAlloc count 2: " << alloc_count << std::endl;
     }
 
+    std::cout << "Alloc count 3: " << alloc_count << std::endl;
     return 0;
 }
